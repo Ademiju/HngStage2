@@ -15,7 +15,7 @@ public class HngController {
 
     @PostMapping(value = "/stage2")
     public HngResponseDto get(@RequestBody HngRequestDto dto){
-        var serv = hs.operation(dto);
+        HngResponseDto serv = hs.operation(dto);
         return serv;
     }
 
